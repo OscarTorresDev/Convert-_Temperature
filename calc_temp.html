@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Conversor de Temperaturas</h2>
+
+      <div class="input">
+        <label for="celsius">Temperatura en Celsius:</label>
+        <input
+          type="text"
+          id="celsius"
+          placeholder="Ingrese la temperatura en °C"
+        />
+        <div id="error" class="error">Por favor, ingrese un número válido</div>
+      </div>
+
+      <button onclick="convertTemperature()">Convertir</button>
+
+      <div id="results" class="results">
+        <h3>Resultados:</h3>
+        <p id="kelvin">Grados Kelvin:</p>
+        <p id="fahrenheit">Grados Fahrenheit:</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
